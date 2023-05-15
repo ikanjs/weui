@@ -1,0 +1,56 @@
+{
+  "name": "@ikanjs/weui",
+  "version": "1.0.0",
+  "description": "A WeUI component library based on Vue3 and Taro3",
+  "main": "index.js",
+  "scripts": {
+    "test": "turbo test",
+    "lint": "eslint . --ext .vue,.ts,.tsx --fix",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "young",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/tsconfig": "^0.4.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.40.0",
+    "eslint-plugin-vue": "^9.12.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "rollup": "^3.21.7",
+    "turbo": "^1.9.4",
+    "typescript": "^5.0.4"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,ts,tsx}": [
+      "pnpm lint",
+      "git add -A"
+    ]
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ]
+}
