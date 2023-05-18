@@ -1,8 +1,13 @@
 import { defineComponent } from 'vue'
 
 const Grid = defineComponent({
+  name: 'VGrid',
   setup() {
-    return <div>grid</div>
+    return (
+      <div class="weui-grids">
+        <slot />
+      </div>
+    )
   },
 })
 
