@@ -21,6 +21,7 @@
     "vue": ">=3.2.0"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
     "weui": "^2.5.16"
   },
   "devDependencies": {
