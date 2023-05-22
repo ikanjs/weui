@@ -10,7 +10,7 @@ interface BadgeProps {
 const Badge = defineComponent<BadgeProps>({
   name: 'VBadge',
   setup(props) {
-    const count =
+    const curCount =
       props.count > props.overflowCount
         ? `${props.overflowCount}+`
         : props.count
@@ -18,7 +18,7 @@ const Badge = defineComponent<BadgeProps>({
     return (
       props.count > 0 && (
         <div class={classNames('weui-badge', { 'weui-badge_dot': props.dot })}>
-          {count}
+          {curCount}
         </div>
       )
     )

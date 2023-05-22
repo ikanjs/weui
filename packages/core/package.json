@@ -2,8 +2,11 @@
   "name": "@ikanjs/weui-core",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
 }

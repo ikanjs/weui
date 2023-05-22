@@ -69,9 +69,17 @@ importers:
         specifier: ^3.5.0
         version: registry.npmmirror.com/nuxt@3.5.0(@types/node@18.0.0)(eslint@8.40.0)(rollup@3.21.7)(typescript@5.0.4)
 
-  packages/core: {}
+  packages/core:
+    dependencies:
+      lodash-es:
+        specifier: ^4.17.21
+        version: registry.npmmirror.com/lodash-es@4.17.21
 
-  packages/h5: {}
+  packages/h5:
+    dependencies:
+      '@ikanjs/weui-core':
+        specifier: workspace:^
+        version: link:../core
 
   packages/weapp: {}
 
@@ -5126,6 +5134,12 @@ packages:
     dependencies:
       p-locate: registry.npmmirror.com/p-locate@5.0.0
     dev: true
+
+  registry.npmmirror.com/lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
+    dev: false
 
   registry.npmmirror.com/lodash._reinterpolate@3.0.0:
     resolution: {integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz}
