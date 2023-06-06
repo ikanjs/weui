@@ -11,5 +11,8 @@
   "devDependencies": {
     "@types/node": "^18",
     "nuxt": "^3.5.0"
+  },
+  "dependencies": {
+    "@ikanjs/weui-h5": "workspace:*"
   }
 }

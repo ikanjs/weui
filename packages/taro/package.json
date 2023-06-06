@@ -1,7 +1,7 @@
 {
-  "name": "@ikanjs/weui-weapp",
+  "name": "@ikanjs/weui-taro",
   "version": "1.0.0",
-  "description": "",
+  "description": "A WeUI component library based on Taro3",
   "main": "index.js",
   "keywords": [],
   "author": "",

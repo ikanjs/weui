@@ -10,7 +10,7 @@ const GridItem = defineComponent<GridItemProps>({
   name: 'VGridItem',
   slots: ['label'],
   setup(props, { emit, slots }) {
-    return (
+    return () => (
       <div class="weui-grid" onClick={(e) => emit('click', e)}>
         <img class="weui-grid__icon" src={props.imgSrc} />
         <div class="weui-grid__label">{props.label ?? slots.label?.()}</div>

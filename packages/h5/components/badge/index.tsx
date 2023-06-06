@@ -15,13 +15,12 @@ const Badge = defineComponent<BadgeProps>({
         ? `${props.overflowCount}+`
         : props.count
 
-    return (
+    return () =>
       props.count > 0 && (
         <div class={classNames('weui-badge', { 'weui-badge_dot': props.dot })}>
           {curCount}
         </div>
       )
-    )
   },
 })
 

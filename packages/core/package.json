@@ -1,7 +1,7 @@
 {
   "name": "@ikanjs/weui-core",
   "version": "1.0.0",
-  "description": "",
+  "description": "A WeUI component library based on Vue3 and Taro3",
   "main": "index.ts",
   "keywords": [],
   "author": "",
