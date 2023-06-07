@@ -2,10 +2,10 @@
   "name": "@ikanjs/weui",
   "version": "1.0.0",
   "description": "A WeUI component library based on Vue3 and Taro3",
-  "private": "true",
   "scripts": {
     "preinstall": "only-allow pnpm",
     "dev": "turbo dev",
+    "build": "turbo build",
     "test": "turbo test",
     "lint": "eslint . --ext .vue,.ts,.tsx --fix",
     "prepare": "husky install"

@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "components/**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "declarationDir": "./",
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "noImplicitThis": false,
+    "esModuleInterop": true,
+    "preserveSymlinks": true
+  },
+}

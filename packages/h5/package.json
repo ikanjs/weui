@@ -1,13 +1,19 @@
 {
-  "name": "@ikanjs/weui-h5",
+  "name": "@ikanjs/vui",
   "version": "1.0.0",
   "description": "A WeUI component library based on Vue3",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "browser": "dist/weui.min.js",
+  "typings": "lib/index.d.ts",
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
   "dependencies": {
-    "@ikanjs/weui-core": "workspace:*",
+    "@ikanjs/vui-core": "workspace:*",
     "classnames": "^2.3.2",
     "weui": "^2.5.16"
   },
@@ -15,6 +21,15 @@
     "vue": ">=3.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-typescript": "^7.21.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@vue/babel-plugin-jsx": "^1.1.1",
     "rollup": "^3.21.7"
   }
 }
